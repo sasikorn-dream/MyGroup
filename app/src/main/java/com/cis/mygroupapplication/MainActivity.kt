@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this,add_activity::class.java)
            //i.putExtra("username",textView1.getText().toString())
                 i.putExtra("name",user.email)
-            Toast.makeText(this,"Log in with "+user.email,Toast.LENGTH_LONG).show()
+            //Toast.makeText(this,"Log in with "+user.email,Toast.LENGTH_LONG).show()
             startActivity(i)
         }
     }

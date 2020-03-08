@@ -46,8 +46,6 @@ class add_activity : AppCompatActivity() {
         }
     }
     public fun updateUI(user: FirebaseUser?) {
-
-
         val i = Intent(this, MainActivity::class.java)
         Toast.makeText(this, "Sign Out Success" , Toast.LENGTH_SHORT).show()
         startActivity(i)
