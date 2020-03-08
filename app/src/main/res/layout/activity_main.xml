@@ -4,87 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-
-    >
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#f4bebe"
         android:orientation="vertical">
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="100dp" />
+            android:layout_height="102dp" />
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="204dp"
+            android:layout_height="154dp"
             android:layout_gravity="center"
-            android:text="ตรวจสอบ"
-            android:textAlignment="center" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            app:srcCompat="@drawable/kkulogo" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="การเข้าร่วมกิจกรรม" />
-
-        <Space
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="wrap_content"
+            android:text="ตรวจสอบ"
+            android:textColor="#000000"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="KKU NKC" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="100dp" />
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="19"
-            android:inputType="textEmailAddress"
-            android:text="E-mail"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="212dp" />
-
-        <EditText
-            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="numberPassword" />
+            android:text="การเข้าร่วมกิจกรรม"
+            android:textColor="#000000"
+            android:textAlignment="center" />
 
-        <Space
+        <TextView
+            android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="wrap_content"
+            android:text="KKU NKC"
+            android:textColor="#000000"
+            android:textAlignment="center" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Button" />
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:backgroundTint="#ED652F"
+            android:text="Sign in with GOOGLE"
+            android:textColor="@color/common_google_signin_btn_text_dark" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:text="" />
 
 
     </LinearLayout>
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
