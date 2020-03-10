@@ -42,6 +42,11 @@ class add_activity : AppCompatActivity() {
 
         googleClient = GoogleSignIn.getClient(this,gso)
         auth = FirebaseAuth.getInstance()
+
+        addEventStd.setOnClickListener {
+            val i = Intent(this,save_activity::class.java)
+            startActivity(i)
+        }
     }
 
     private fun signOut(){
