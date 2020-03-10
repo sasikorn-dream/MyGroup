@@ -2,9 +2,14 @@ package com.cis.mygroupapplication
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -23,10 +28,10 @@ class add_activity : AppCompatActivity() {
         setContentView(R.layout.activity_add_activity)
 
         val name = getIntent().getStringExtra("name")
-        textView.text = "Sign in with " + name
+        textView.text = "                      Sign in with \n $name"
 
         auth = FirebaseAuth.getInstance()//เก็บเอาค่า LOgin
-        var signoutbtn = findViewById(R.id.SignOutbtn) as Button
+        //var signoutbtn = findViewById(R.id.SignOutbtn) as Button
         SignOutbtn.setOnClickListener({v->signOut() })
 
         var gso = GoogleSignInOptions.Builder(
@@ -51,4 +56,6 @@ class add_activity : AppCompatActivity() {
         startActivity(i)
 
     }
+
+
 }
