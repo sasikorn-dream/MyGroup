@@ -1,22 +1,110 @@
 <resources>
-    <string name="app_name">My Group Application</string>
-    <string name="title_activity_addevent">addevent</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string-array name="students_array">
+        <item>นายกฤษฎา ท่าสะอาด</item>
+        <item>นายกัมพล โชติทอง</item>
+        <item>นายณัฐนนท์ ทาไธสง</item>
+        <item>นายนฤเบศร์ พระโรจน์</item>
+        <item>นายพรหมพัฒน์ ชาญโชคประเสริฐ</item>
+        <item>นายเมธาวี สารีผล</item>
+        <item>นายรัฐเขต สีเหลือง</item>
+        <item>นายรุ่งโรจน์ พลเยี่ยม</item>
+        <item>นายวิธาน วงษาบุตร</item>
+        <item>นางสาวศศิกร กอเสนาะรส</item>
+        <item>นางสาวอนันตยา โคตรศรี</item>
+        <item>นายอภิเดช นารอง</item>
+        <item>นายอุทัยพันธ์ เที่ยงโคตร</item>
+        <item>นางสาวพัชรี แอแป</item>
+        <item>นางสาวศศิธร พิมมะทา</item>
+        <item>นายสุรพร อินพิลึก</item>
+        <item>นายกฤษดา อุ่นสำโรง</item>
+        <item>นายณรงค์ศึก เตชะศรี</item>
+        <item>นายติยพล ต่อติด</item>
+        <item>นายทรัพย์ทวี เพ็ชรสาย</item>
+        <item>นางสาวธิดารัตน์ ดานะพันธ์</item>
+        <item>นายปิยทัศน์ นวกิจวัฒนา</item>
+        <item>นายพรสิน มีสีบู</item>
+        <item>นายพัชรพล ไทยมานี้</item>
+        <item>นายวงษกร พันธ์พิบูลย์</item>
+        <item>นายวรรณพงษ์ ภัททิยไพบูลย์</item>
+        <item>นายวิวัฒน์ วงษ์พิชัย</item>
+        <item>นางสาวศุภรัตน์ นพวัติ</item>
+        <item>นางสาวสิรินาถ จริยพันธ์</item>
+        <item>นายเกียรติศักดิ์ วรภาพ</item>
+        <item>นางสาวธัญสิริ ผลไสว</item>
+        <item>นางสาวอาทิตยา ฉิมมาแก้ว</item>
+    </string-array>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_add">addActivity</string>
-    <string name="title_activity_login">Sign in</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string-array name="student_id_array">
+         
+        <item>603410032-9</item>
+         
+        <item>603410034-5</item>
+         
+        <item>603410041-8</item>
+         
+        <item>603410047-6</item>
+         
+        <item>603410052-3</item>
+         
+        <item>603410057-3</item>
+         
+        <item>603410059-9</item>
+         
+        <item>603410060-4</item>
+         
+        <item>603410061-2</item>
+         
+        <item>603410063-8</item>
+         
+        <item>603410070-1</item>
+         
+        <item>603410071-9</item>
+         
+        <item>603410073-5</item>
+         
+        <item>603410155-3</item>
+         
+        <item>603410156-1</item>
+         
+        <item>603410157-9</item>
+         
+        <item>603410194-3</item>
+         
+        <item>603410200-4</item>
+         
+        <item>603410202-0</item>
+         
+        <item>603410203-8</item>
+         
+        <item>603410204-6</item>
+         
+        <item>603410208-8</item>
+         
+        <item>603410210-1</item>
+         
+        <item>603410211-9</item>
+         
+        <item>603410213-5</item>
+         
+        <item>603410214-3</item>
+         
+        <item>603410217-7</item>
+         
+        <item>603410219-3</item>
+         
+        <item>603410221-6</item>
+         
+        <item>603410289-2</item>
+         
+        <item>603410291-5</item>
+         
+        <item>603410321-2</item>
+    </string-array>
+
+    <string-array name="events_array">
+        <item>Com See it</item>
+        <item>Com Camp</item>
+    </string-array>
+
+    <string name="title_activity_todolist">TodolistActivity</string>
 </resources>

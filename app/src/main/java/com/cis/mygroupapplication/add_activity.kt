@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,6 +32,8 @@ class add_activity : AppCompatActivity() {
         val name = getIntent().getStringExtra("name")
         textView.text = "                      Sign in with \n $name"
 
+
+
         auth = FirebaseAuth.getInstance()//เก็บเอาค่า LOgin
         //var signoutbtn = findViewById(R.id.SignOutbtn) as Button
         SignOutbtn.setOnClickListener({v->signOut() })
@@ -43,10 +47,29 @@ class add_activity : AppCompatActivity() {
         googleClient = GoogleSignIn.getClient(this,gso)
         auth = FirebaseAuth.getInstance()
 
-        addEventStd.setOnClickListener {
-            val i = Intent(this,save_activity::class.java)
-            startActivity(i)
+        val arrayAdapter: ArrayAdapter<*>
+        val students_array = resources.getStringArray(R.array.students_array)
+
+        // access the listView from xml file
+        var mListView = findViewById<ListView>(R.id.userlist)
+        arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, students_array)
+        mListView.adapter = arrayAdapter
+
+        mListView.setOnItemClickListener { parent, view, position, id ->
+
+            val selectedItem = parent.getItemAtPosition(position) as String
+            val intent = Intent(this, eventlistActivity::class.java)
+
+
+            //i.putExtra("username",textView1.getText().toString())
+            intent.putExtra("name",selectedItem)
+            //Toast.makeText(this,"Log in with "+user.email,Toast.LENGTH_LONG).show()
+
+            startActivity(intent)
+            //val intent = Intent(this, BookDetailActivity::class.java)
+            //startActivity(intent)
         }
+
     }
 
     private fun signOut(){
@@ -61,6 +84,8 @@ class add_activity : AppCompatActivity() {
         startActivity(i)
 
     }
+
+
 
 
 }
